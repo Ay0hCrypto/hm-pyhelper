@@ -379,6 +379,24 @@ variant_definitions = {
         'CONTAINS_IC_IDS': []
         },
 
+    # Panther X1
+    'COMP-PANTHERX1': {
+        'FRIENDLY': 'Panther X1',
+        'SPIBUS': 'spidev0.0',
+        'KEY_STORAGE_BUS': '/dev/i2c-1',
+        'RESET': 23,
+        'MAC': 'wlan0',
+        'STATUS': 22,
+        'BUTTON': 21,
+        'ECCOB': True,
+        'TYPE': 'Full',
+        'CELLULAR': False,
+        'FCC_IDS': [],
+        'CONTAINS_FCC_IDS': [],
+        'IC_IDS': [],
+        'CONTAINS_IC_IDS': []
+        },
+
     # Smart Mimic / Mimiq Finestra
     'COMP-FINESTRA': {
         'FRIENDLY': 'Finestra Miner',
@@ -414,6 +432,25 @@ variant_definitions = {
         'ECCOB': True,
         'TYPE': 'Full',
         'CELLULAR': False,
+        'FCC_IDS': [],
+        'CONTAINS_FCC_IDS': [],
+        'IC_IDS': [],
+        'CONTAINS_IC_IDS': []
+        },
+
+    # COTX X3 Hotspot
+    'COMP-COTX3': {
+        'FRIENDLY': 'COTX X3',
+        'SPIBUS': 'spidev0.0',  # There is a CSN1 pin which is connected to GPIO6 (HAT Pin 31)
+        'KEY_STORAGE_BUS': '/dev/i2c-0',
+        'RESET': 22,
+        'MAC': 'eth0',
+        'STATUS': 21,  # Stub. There is no status LED on X3. I2C-3 is used for display
+                       # communication (HAT pins 5,7)
+        'BUTTON': 23,
+        'ECCOB': True,
+        'TYPE': 'Full',
+        'CELLULAR': False,  # There is a 4G option on the HAT board.
         'FCC_IDS': [],
         'CONTAINS_FCC_IDS': [],
         'IC_IDS': [],
