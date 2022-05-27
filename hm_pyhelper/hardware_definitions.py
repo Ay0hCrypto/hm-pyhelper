@@ -360,6 +360,24 @@ variant_definitions = {
         'IC_IDS': [],
         'CONTAINS_IC_IDS': []
         },
+    
+     # Hardware SenseCAPM1 SW ACSCFM
+    'COMP-NOAH': {
+        'FRIENDLY': 'NOAH',
+        'SPIBUS': 'spidev0.0',
+        'KEY_STORAGE_BUS': '/dev/i2c-1',
+        'RESET': 17,
+        'MAC': 'wlan0',
+        'STATUS': 22,
+        'BUTTON': 27,
+        'ECCOB': True,
+        'TYPE': 'Full',
+        'CELLULAR': False,
+        'FCC_IDS': [],
+        'CONTAINS_FCC_IDS': [],
+        'IC_IDS': [],
+        'CONTAINS_IC_IDS': []
+        },
 
     # Smart Mimic / Mimiq Finestra
     'COMP-FINESTRA': {
